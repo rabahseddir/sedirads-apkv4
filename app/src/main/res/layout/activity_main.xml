@@ -1,9 +1,18 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/googleSignInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="تسجيل الدخول باستخدام Google"
+        app:icon="@android:drawable/ic_menu_search" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -14,19 +23,6 @@
         android:max="100"
         android:progress="0"
         android:visibility="gone" />
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/googleSignInButton"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/google_sign_in_button"
-        app:icon="@android:drawable/ic_dialog_email"
-        app:iconPadding="8dp" />
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
